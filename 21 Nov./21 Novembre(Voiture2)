@@ -1,0 +1,12 @@
+import pandas
+import matplotlib.pyplot as plt
+
+df = pandas.read_excel('/home/utilisateur/Téléchargements/autompg.xlsx')
+print(df)
+
+x = df['accélération']
+y = df['puissance']
+
+plt.plot(x, y, 'ro')
+plt.xlabel('accel')
+plt.ylabel('puissance')
